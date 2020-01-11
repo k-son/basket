@@ -1,8 +1,2 @@
-# gulp-setup
-my basic setup for web development
+# Score and time counter for basketball game
 
-
-Copy files and subfolders (not an entire gulp setup folder). Then you can create a new git repo.
-Copy .gitignore.
-
-Run gulp watch.
