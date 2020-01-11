@@ -1,0 +1,110 @@
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.time {
+  display: flex;
+  height: 10vh;
+}
+
+.new-game {
+  font-size: 1.4rem;
+  width: 15vw;
+  height: 15vw;
+  background-color: red;
+  text-align: center;
+}
+
+.timer {
+  font-size: 12vw;
+  width: 38vw;
+  height: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  width: 15vw;
+  height: 15vw;
+  font-size: 1.4rem;
+  text-align: center;
+
+  &--startnew {
+    background-color: lightskyblue;
+  }
+  &--pause {
+    background-color: orange;
+  }
+  &--play {
+    background-color: lightgreen;
+  }
+}
+
+
+.scores {
+  display: flex;
+  flex-direction: column;
+}
+
+.team {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.team-a {
+  background-color: lightgoldenrodyellow;
+}
+.team-b {
+  background-color: wheat;
+}
+
+.score-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.caption {
+  font-size: 2rem;
+  text-transform: uppercase;
+  word-spacing: 1rem;
+}
+
+.score-count {
+  font-size: 4rem;
+}
+
+.point-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.point {
+  width: 16vw;
+  height: 16vw;
+  border-radius: 50%;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 6vw;
+}
+
+.plus1 {
+  background-color: orange;
+}
+.plus2 {
+  background-color: orangered;
+}
+.plus3 {
+  background-color: red;
+}
+.minus1 {
+  background-color: lightblue;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="descripiton" content="">
+  <meta name="author" content="">
+
+  <!-- favicons -->
+
+  <title>Basket</title>
+
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="time">
+      <button class="new-game">NEW GAME</button>
+      <div class="timer well"></div>
+      <div class="timer-buttons">
+        <button class="btn btn--startnew" onClick="$('.timer').countimer('start');">Start new</button> 
+        <button class="btn btn--pause" onClick="$('.timer').countimer('stop');">Pause</button>  
+        <button class="btn btn--play" onClick="$('.timer').countimer('resume');">Play</button>
+      </div>
+    </div>
+    
+    <div class="scores">
+      <div class="team team-a">
+        <div class="score-box">
+          <div class="caption">Team A</div>
+          <div class="score-count score-count-a"></div>
+        </div>
+        <div class="point-box point-box-a">
+          <button class="point plus1">+1</button>
+          <button class="point plus2">+2</button>
+          <button class="point plus3">+3</button>
+          <button class="point minus1">-1</button>
+        </div>
+      </div>
+      <div class="team team-b">
+        <div class="score-box">
+          <div class="caption">Team B</div>
+          <div class="score-count score-count-b"></div>
+        </div>
+        <div class="point-box point-box-b">
+          <button class="point plus1">+1</button>
+          <button class="point plus2">+2</button>
+          <button class="point plus3">+3</button>
+          <button class="point minus1">-1</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  <script src="stopwatch/dist/ez.countimer.js"></script>
+  <script>
+  $('.timer').countimer();
+
+  const scoreCountA = $('.score-count-a');
+  const scoreCountB = $('.score-count-b');
+  
+  let scoreTotalA = 0;
+  let scoreTotalB = 0;
+  scoreCountA.text(scoreTotalA);
+  scoreCountB.text(scoreTotalB);
+  
+  function pointsForA(num) {
+    scoreTotalA += num;
+    scoreCountA.text(scoreTotalA.toString());
+  }
+
+  function pointsForB(num) {
+    scoreTotalB += num;
+    scoreCountB.text(scoreTotalB.toString());
+  }
+
+  $('.point-box-a .plus1').click(() => pointsForA(1));
+  $('.point-box-a .plus2').click(() => pointsForA(2));
+  $('.point-box-a .plus3').click(() => pointsForA(3));
+  $('.point-box-a .minus1').click(() => pointsForA(-1));
+
+  $('.point-box-b .plus1').click(() => pointsForB(1));
+  $('.point-box-b .plus2').click(() => pointsForB(2));
+  $('.point-box-b .plus3').click(() => pointsForB(3));
+  $('.point-box-b .minus1').click(() => pointsForB(-1));
+
+  $('.new-game').click(() => {
+    scoreTotalA = 0;
+    scoreTotalB = 0;
+    scoreCountA.text(scoreTotalA.toString());
+    scoreCountB.text(scoreTotalB.toString());
+
+  })
+  </script>
+</body>
+</html>
