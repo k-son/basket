@@ -41,7 +41,7 @@
       <div class="timer-buttons">
         <button class="btn btn--startnew" onClick="$('.timer').countimer('start');">Start new timer</button> 
         <button class="btn btn--pause" onClick="$('.timer').countimer('stop');"><span>&#10074;&#10074;</span></button>  
-        <button class="btn btn--play" onClick="$('.timer').countimer('resume');">&#9658;</button>
+        <button class="btn btn--play" onClick="$('.timer').countimer('resume');">&#x25B6;</button>
       </div>
     </div>
     
@@ -72,8 +72,6 @@
       </div>
     </div>
   </div>
-
-
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
@@ -110,11 +108,12 @@
   $('.point-box-b .minus1').click(() => pointsForB(-1));
 
   $('.new-game').click(() => {
+    if (confirm('Do you really want to start a new game?\n Actual score will be lost!')) {
     scoreTotalA = 0;
     scoreTotalB = 0;
     scoreCountA.text(scoreTotalA.toString());
     scoreCountB.text(scoreTotalB.toString());
-
+    };
   })
   </script>
 </body>
