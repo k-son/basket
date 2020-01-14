@@ -6,7 +6,11 @@
   justify-content: space-evenly;
   background-color: black;
 
-  @media (orientation: landscape) {
+  @media (min-width: 1025px) {
+    flex-direction: row;
+  }
+
+  @media (max-width: 1024px) and (orientation: landscape) {
    justify-content: space-around; 
   }
 }
@@ -19,7 +23,14 @@
   background-color: black;
   overflow: hidden;
 
-  @media (orientation: landscape) {
+  @media (min-width: 1025px) {
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 65vw;
+    justify-content: space-evenly;
+  }
+
+  @media (max-width: 1024px) and (orientation: landscape) {
    height: 25vh; 
   }
 }
@@ -36,7 +47,12 @@
   padding: .5rem;
   text-align: center;
 
-  @media only screen and (max-width: 450px) {
+  @media (min-width: 1025px) {
+    max-width: 10rem;
+    order: 5;
+  }
+
+  @media (max-width: 1024px) and (max-width: 450px) {
     font-size: 1.2rem;
     font-weight: 400;
   }
@@ -50,7 +66,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white
+  color: white;
+
+  @media (min-width: 1025px) {
+    font-size: 23vw;
+    height: 40vh;
+    width: 65vw;
+
+  }
 }
 
 .btn {
@@ -62,13 +85,17 @@
   text-align: center;
   border-radius: 3px;
 
+  @media (min-width: 1025px) {
+    
+  }
+
   &--startnew {
     color: white;
     background-color: #0077df;
     text-transform: uppercase;
     padding: .5rem;
 
-    @media only screen and (max-width: 450px) {
+    @media (max-width: 1024px) and (max-width: 450px) {
       font-size: 1rem;
       font-weight: 400;
       padding: 0;
@@ -91,7 +118,12 @@
   flex-direction: column;
   overflow: hidden;
 
-  @media (orientation: landscape) {
+  @media (min-width: 1025px) {
+   width: 35%; 
+   height: 100vh;
+  }
+
+  @media (max-width: 1024px) and (orientation: landscape) {
     flex-direction: row;
   }
 }
@@ -104,8 +136,11 @@
   flex-direction: column;
   justify-content: space-evenly;
 
-  @media (orientation: landscape) {
-    width: 50%;
+  @media (min-width: 1025px) {
+    height: 50vh; 
+  }
+
+  @media (max-width: 1024px) and (orientation: landscape) {
     height: 70vh;
   }
 }
@@ -122,6 +157,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+
+  @media (min-width: 1025px) {
+   justify-content: space-evenly; 
+  }
 }
 
 .caption {
@@ -132,7 +171,11 @@
   word-spacing: .5rem;
   color: rgb(255, 255, 255);
 
-  @media (orientation: landscape) {
+  @media (min-width: 1025px) {
+    font-size: 5vh;
+  }
+
+  @media (max-width: 1024px) and (orientation: landscape) {
     font-size: 4vw;
   }
 }
@@ -141,7 +184,12 @@
   font-size: 14vw;
   line-height: 1.2;
 
-  @media (orientation: landscape) {
+  @media (min-width: 1025px) {
+   font-size: 30vh; 
+   line-height: 1;
+  }
+
+  @media (max-width: 1024px) and (orientation: landscape) {
    font-size: 8vw; 
   }
 }
@@ -159,7 +207,13 @@
   text-align: center;
   font-size: 6vw;
 
-  @media (orientation: landscape) {
+  @media (min-width: 1025px) {
+   width: 8vh;
+   height: 8vh; 
+   font-size: 4vh;
+  }
+
+  @media (max-width: 1024px) and (orientation: landscape) {
     width: 10vw;
     height: 10vw;
     font-size: 4vw;

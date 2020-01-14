@@ -444,7 +444,12 @@ body {
   -webkit-box-pack: space-evenly;
   justify-content: space-evenly;
   background-color: black; }
-  @media (orientation: landscape) {
+  @media (min-width: 1025px) {
+    .wrapper {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-direction: row; } }
+  @media (max-width: 1024px) and (orientation: landscape) {
     .wrapper {
       justify-content: space-around; } }
 
@@ -457,7 +462,14 @@ body {
   margin: 0 auto;
   background-color: black;
   overflow: hidden; }
-  @media (orientation: landscape) {
+  @media (min-width: 1025px) {
+    .time {
+      flex-wrap: wrap;
+      height: 100vh;
+      width: 65vw;
+      -webkit-box-pack: space-evenly;
+      justify-content: space-evenly; } }
+  @media (max-width: 1024px) and (orientation: landscape) {
     .time {
       height: 25vh; } }
 
@@ -472,7 +484,12 @@ body {
   border-radius: 3px;
   padding: .5rem;
   text-align: center; }
-  @media only screen and (max-width: 450px) {
+  @media (min-width: 1025px) {
+    .new-game {
+      max-width: 10rem;
+      -webkit-box-ordinal-group: 6;
+      order: 5; } }
+  @media (max-width: 1024px) and (max-width: 450px) {
     .new-game {
       font-size: 1.2rem;
       font-weight: 400; } }
@@ -489,6 +506,11 @@ body {
   -webkit-box-align: center;
   align-items: center;
   color: white; }
+  @media (min-width: 1025px) {
+    .timer {
+      font-size: 23vw;
+      height: 40vh;
+      width: 65vw; } }
 
 .btn {
   width: 15vw;
@@ -503,7 +525,7 @@ body {
     background-color: #0077df;
     text-transform: uppercase;
     padding: .5rem; }
-    @media only screen and (max-width: 450px) {
+    @media (max-width: 1024px) and (max-width: 450px) {
       .btn--startnew {
         font-size: 1rem;
         font-weight: 400;
@@ -524,7 +546,11 @@ body {
   -webkit-box-direction: normal;
   flex-direction: column;
   overflow: hidden; }
-  @media (orientation: landscape) {
+  @media (min-width: 1025px) {
+    .scores {
+      width: 35%;
+      height: 100vh; } }
+  @media (max-width: 1024px) and (orientation: landscape) {
     .scores {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -541,9 +567,11 @@ body {
   flex-direction: column;
   -webkit-box-pack: space-evenly;
   justify-content: space-evenly; }
-  @media (orientation: landscape) {
+  @media (min-width: 1025px) {
     .team {
-      width: 50%;
+      height: 50vh; } }
+  @media (max-width: 1024px) and (orientation: landscape) {
+    .team {
       height: 70vh; } }
 
 .team-a {
@@ -561,6 +589,10 @@ body {
   -webkit-box-align: center;
   align-items: center;
   justify-content: space-around; }
+  @media (min-width: 1025px) {
+    .score-box {
+      -webkit-box-pack: space-evenly;
+      justify-content: space-evenly; } }
 
 .caption {
   font-size: 5vw;
@@ -569,14 +601,21 @@ body {
   letter-spacing: 1px;
   word-spacing: .5rem;
   color: white; }
-  @media (orientation: landscape) {
+  @media (min-width: 1025px) {
+    .caption {
+      font-size: 5vh; } }
+  @media (max-width: 1024px) and (orientation: landscape) {
     .caption {
       font-size: 4vw; } }
 
 .score-count {
   font-size: 14vw;
   line-height: 1.2; }
-  @media (orientation: landscape) {
+  @media (min-width: 1025px) {
+    .score-count {
+      font-size: 30vh;
+      line-height: 1; } }
+  @media (max-width: 1024px) and (orientation: landscape) {
     .score-count {
       font-size: 8vw; } }
 
@@ -592,7 +631,12 @@ body {
   border: 3px solid black;
   text-align: center;
   font-size: 6vw; }
-  @media (orientation: landscape) {
+  @media (min-width: 1025px) {
+    .point {
+      width: 8vh;
+      height: 8vh;
+      font-size: 4vh; } }
+  @media (max-width: 1024px) and (orientation: landscape) {
     .point {
       width: 10vw;
       height: 10vw;
