@@ -468,7 +468,9 @@ body {
       height: 100vh;
       width: 65vw;
       -webkit-box-pack: space-evenly;
-      justify-content: space-evenly; } }
+      justify-content: space-evenly;
+      align-content: flex-end;
+      padding-bottom: 20px; } }
   @media (max-width: 1024px) and (orientation: landscape) {
     .time {
       height: 25vh; } }
@@ -477,6 +479,7 @@ body {
   font-size: 1.6rem;
   font-weight: 600;
   width: 15vw;
+  max-width: 10rem;
   height: 15vw;
   max-height: 10rem;
   color: white;
@@ -484,9 +487,12 @@ body {
   border-radius: 3px;
   padding: .5rem;
   text-align: center; }
+  @media (min-width: 1920px) {
+    .new-game {
+      max-height: 15rem;
+      max-width: 15rem; } }
   @media (min-width: 1025px) {
     .new-game {
-      max-width: 10rem;
       -webkit-box-ordinal-group: 6;
       order: 5; } }
   @media (max-width: 1024px) and (max-width: 450px) {
@@ -509,8 +515,9 @@ body {
   @media (min-width: 1025px) {
     .timer {
       font-size: 23vw;
-      height: 40vh;
-      width: 65vw; } }
+      height: 32vh;
+      width: 65vw;
+      margin-bottom: calc((100vh - 23vh - 10rem)/3); } }
 
 .btn {
   width: 15vw;
@@ -520,6 +527,10 @@ body {
   font-size: 1.4rem;
   text-align: center;
   border-radius: 3px; }
+  @media (min-width: 1920px) {
+    .btn {
+      max-height: 15rem;
+      max-width: 15rem; } }
   .btn--startnew {
     color: white;
     background-color: #0077df;
