@@ -4,7 +4,7 @@ Simple score counter and countup timer.
 
 <br />
 
-Layout for mobile, tablet and large desktop (can act as a score board) considered.
+Responsive layouts for mobile, tablet and desktop (can act as a score board) considered.
 
 <br />
 
