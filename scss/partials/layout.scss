@@ -3,15 +3,11 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   background-color: black;
 
   @media (min-width: 1000px) {
     flex-direction: row;
-  }
-
-  @media (max-width: 999px) and (orientation: landscape) {
-   justify-content: space-around; 
   }
 }
 
@@ -27,7 +23,7 @@
     flex-wrap: wrap;
     height: 100vh;
     width: 65vw;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-content: flex-end;
     padding-bottom: 20px;
   }
@@ -146,7 +142,7 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
 
   @media (min-width: 1000px) {
     height: 50vh; 
@@ -171,7 +167,7 @@
   justify-content: space-around;
 
   @media (min-width: 1000px) {
-   justify-content: space-evenly; 
+   justify-content: space-around; 
   }
 }
 
