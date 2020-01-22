@@ -430,9 +430,6 @@ html {
 body {
   box-sizing: border-box; }
 
-body {
-  font-family: -apple-system,  BlinkMacSystemFont,  "Segoe UI",  Roboto,  Oxygen-Sans,  Ubuntu,  Cantarell,  "Helvetica Neue",  sans-serif; }
-
 .wrapper {
   height: 100vh;
   width: 100%;
@@ -564,7 +561,7 @@ body {
   .btn--pause {
     background-color: #ffb700; }
   .btn--play {
-    background-color: #2fd700e9; }
+    background-color: #2ac200; }
 
 .scores {
   display: -webkit-box;
