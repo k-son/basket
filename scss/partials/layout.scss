@@ -99,7 +99,7 @@
   max-width: 10rem;
   height: 9vh;
   max-height: 10rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-align: center;
   border-radius: 3px;
   display: flex;
@@ -109,7 +109,7 @@
   padding: 5px;
 
   @media (max-width: 1024px) and (orientation: landscape) {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 400;
   }
 
@@ -118,6 +118,7 @@
     height: 12vh;
     max-height: 15rem;
     max-width: 15rem;
+    font-size: 1.8rem;
   }
 
   &--newgame {
