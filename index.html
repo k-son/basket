@@ -37,21 +37,27 @@
 <body>
   <div class="wrapper">
     <div class="time">
-      <button class="new-game">NEW GAME</button>
       <div class="timer well"></div>
       <div class="timer-buttons">
-        <button class="btn btn--startnew" onClick="$('.timer').countimer('start');">Start new timer</button> 
-        <button class="btn btn--pause" onClick="$('.timer').countimer('stop');"><span>&#10074;&#10074;</span></button>  
-        <button class="btn btn--play" onClick="$('.timer').countimer('resume');">&#x25B6;</button>
+        <div class="timer-buttons--1floor">
+          <button class="btn btn--newgame">new game</button>
+          <button class="btn btn--startnew" onClick="$('.timer').countimer('start');">Start new timer</button> 
+        </div>
+        <div class="timer-buttons--2floor">
+          <button class="btn btn--pause" onClick="$('.timer').countimer('stop');">pause</button>  
+          <button class="btn btn--play" onClick="$('.timer').countimer('resume');">play</button>
+          <!--
+          <button class="btn btn--pause" onClick="$('.timer').countimer('stop');"><span>&#10074;&#10074;</span></button>  
+          <button class="btn btn--play" onClick="$('.timer').countimer('resume');">&#x25B6;</button>
+          -->
+        </div>
       </div>
     </div>
     
     <div class="scores">
       <div class="team team-a">
-        <div class="score-box">
-          <div class="caption">Team A</div>
-          <div class="score-count score-count-a"></div>
-        </div>
+        <div class="caption">Team A</div>
+        <div class="score-count score-count-a"></div>
         <div class="point-box point-box-a">
           <button class="point plus1">+1</button>
           <button class="point plus2">+2</button>
@@ -60,10 +66,8 @@
         </div>
       </div>
       <div class="team team-b">
-        <div class="score-box">
-          <div class="caption">Team B</div>
-          <div class="score-count score-count-b"></div>
-        </div>
+        <div class="caption">Team B</div>
+        <div class="score-count score-count-b"></div>
         <div class="point-box point-box-b">
           <button class="point plus1">+1</button>
           <button class="point plus2">+2</button>
@@ -108,7 +112,7 @@
   $('.point-box-b .plus3').click(() => pointsForB(3));
   $('.point-box-b .minus1').click(() => pointsForB(-1));
 
-  $('.new-game').click(() => {
+  $('.btn--newgame').click(() => {
     if (confirm('Do you really want to start a new game?\n Actual score will be lost!')) {
     scoreTotalA = 0;
     scoreTotalB = 0;
