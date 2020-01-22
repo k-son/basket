@@ -554,11 +554,11 @@ body {
       max-width: 15rem; } }
   .btn--newgame {
     color: #fff;
-    background-color: red;
+    background-color: #da0101;
     text-transform: uppercase; }
   .btn--startnew {
     color: #fff;
-    background-color: #0077df;
+    background-color: #006ece;
     text-transform: uppercase; }
     @media (max-width: 999px) {
       .btn--startnew {
@@ -568,7 +568,7 @@ body {
   .btn--pause {
     background-color: #ffb700; }
   .btn--play {
-    background-color: #80ff00e9; }
+    background-color: #2fd700e9; }
 
 .scores {
   display: -webkit-box;
@@ -695,5 +695,5 @@ body {
   border-color: #b50000; }
 
 .minus1 {
-  background-color: #22c8ffcb;
-  border-color: #0188b5cb; }
+  background-color: #22c8ff;
+  border-color: #0188b5; }
