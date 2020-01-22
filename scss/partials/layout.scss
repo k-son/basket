@@ -6,7 +6,7 @@
   justify-content: space-around;
   background-color: black;
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
     flex-direction: row;
   }
 }
@@ -20,7 +20,7 @@
   background-color: black;
   overflow: hidden;
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
     flex-wrap: wrap;
     height: 100vh;
     width: 65vw;
@@ -29,7 +29,7 @@
     padding-bottom: 20px;
   }
 
-  @media (max-width: 999px) and (orientation: landscape) {
+  @media (max-width: 1024px) and (orientation: landscape) {
    height: 25vh;
   }
 }
@@ -43,12 +43,12 @@
   align-items: center;
   color: #fff;
 
-  @media (max-width: 999px) and (orientation: landscape) {
+  @media (max-width: 1024px) and (orientation: landscape) {
     font-size: 30vh;
     width: 70vw;
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
     font-size: 23vw;
     height: 32vh;
     width: 65vw;
@@ -59,23 +59,23 @@
 .timer-buttons {
   display: flex;
 
-  @media (max-width: 999px) and (orientation: landscape) {
+  @media (max-width: 1024px) and (orientation: landscape) {
     display: block;
    }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
     display: flex;
   }
 
   &--1floor {
     margin-right: 3px;
 
-    @media (max-width: 999px) and (orientation: landscape) {
+    @media (max-width: 1024px) and (orientation: landscape) {
       margin-bottom: 3px;
       display: flex;
     }
 
-    @media (min-width: 1000px) {
+    @media (min-width: 1025px) {
       margin-right: 2.4rem;
       margin-bottom: 3px;
       display: flex;
@@ -84,11 +84,11 @@
 
   &--2floor {
 
-    @media (max-width: 999px) and (orientation: landscape) {
+    @media (max-width: 1024px) and (orientation: landscape) {
       display: flex;
     }
     
-    @media (min-width: 1000px) {
+    @media (min-width: 1025px) {
       display: flex;
     }
   }
@@ -108,12 +108,12 @@
   margin: 3px;
   padding: 5px;
 
-  @media (max-width: 999px) and (orientation: landscape) {
+  @media (max-width: 1024px) and (orientation: landscape) {
     font-size: 1.2rem;
     font-weight: 400;
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
     width: 12vh;
     height: 12vh;
     max-height: 15rem;
@@ -147,12 +147,12 @@
   overflow: hidden;
 
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
    width: 35%; 
    height: 100vh;
   }
 
-  @media (max-width: 999px) and (orientation: landscape) {
+  @media (max-width: 1024px) and (orientation: landscape) {
     flex-direction: row;
     justify-content: center;
   }
@@ -167,11 +167,11 @@
   justify-content: space-around;
   align-items: center;
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
     height: 50vh; 
   }
 
-  @media (max-width: 999px) and (orientation: landscape) {
+  @media (max-width: 1024px) and (orientation: landscape) {
     height: 70vh;
   }
 }
@@ -189,7 +189,7 @@
   align-items: center;
   justify-content: space-around;
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
    justify-content: space-around; 
   }
 }
@@ -202,11 +202,11 @@
   word-spacing: .5rem;
   color: #fff;
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
     font-size: 4vh;
   }
 
-  @media (max-width: 999px) and (orientation: landscape) {
+  @media (max-width: 1024px) and (orientation: landscape) {
     font-size: 4vh;
   }
 }
@@ -215,12 +215,12 @@
   font-size: 14vh;
   line-height: 1;
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
    font-size: 32vh; 
    line-height: 1;
   }
 
-  @media (max-width: 999px) and (orientation: landscape) {
+  @media (max-width: 1024px) and (orientation: landscape) {
    font-size: 32vw; 
   }
 }
@@ -229,7 +229,7 @@
   display: flex;
   justify-content: center;
 
-  @media (max-width: 999px) and (orientation: landscape) {
+  @media (max-width: 1024px) and (orientation: landscape) {
     justify-content: center;
   }
 }
@@ -242,13 +242,13 @@
   text-align: center;
   font-size: 6vw;
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
    width: 7vh;
    height: 7vh; 
    font-size: 3vh;
   }
 
-  @media (max-width: 999px) and (orientation: landscape) {
+  @media (max-width: 1024px) and (orientation: landscape) {
     width: 7vw;
     height: 7vw;
     font-size: 3vw;

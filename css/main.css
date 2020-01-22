@@ -443,7 +443,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   background-color: black; }
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
     .wrapper {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -460,7 +460,7 @@ body {
   margin: 0 auto;
   background-color: black;
   overflow: hidden; }
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
     .time {
       flex-wrap: wrap;
       height: 100vh;
@@ -468,7 +468,7 @@ body {
       justify-content: space-around;
       align-content: flex-end;
       padding-bottom: 20px; } }
-  @media (max-width: 999px) and (orientation: landscape) {
+  @media (max-width: 1024px) and (orientation: landscape) {
     .time {
       height: 25vh; } }
 
@@ -483,11 +483,11 @@ body {
   -webkit-box-align: center;
   align-items: center;
   color: #fff; }
-  @media (max-width: 999px) and (orientation: landscape) {
+  @media (max-width: 1024px) and (orientation: landscape) {
     .timer {
       font-size: 30vh;
       width: 70vw; } }
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
     .timer {
       font-size: 23vw;
       height: 32vh;
@@ -497,31 +497,31 @@ body {
 .timer-buttons {
   display: -webkit-box;
   display: flex; }
-  @media (max-width: 999px) and (orientation: landscape) {
+  @media (max-width: 1024px) and (orientation: landscape) {
     .timer-buttons {
       display: block; } }
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
     .timer-buttons {
       display: -webkit-box;
       display: flex; } }
   .timer-buttons--1floor {
     margin-right: 3px; }
-    @media (max-width: 999px) and (orientation: landscape) {
+    @media (max-width: 1024px) and (orientation: landscape) {
       .timer-buttons--1floor {
         margin-bottom: 3px;
         display: -webkit-box;
         display: flex; } }
-    @media (min-width: 1000px) {
+    @media (min-width: 1025px) {
       .timer-buttons--1floor {
         margin-right: 2.4rem;
         margin-bottom: 3px;
         display: -webkit-box;
         display: flex; } }
-  @media (max-width: 999px) and (orientation: landscape) {
+  @media (max-width: 1024px) and (orientation: landscape) {
     .timer-buttons--2floor {
       display: -webkit-box;
       display: flex; } }
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
     .timer-buttons--2floor {
       display: -webkit-box;
       display: flex; } }
@@ -542,11 +542,11 @@ body {
   justify-content: center;
   margin: 3px;
   padding: 5px; }
-  @media (max-width: 999px) and (orientation: landscape) {
+  @media (max-width: 1024px) and (orientation: landscape) {
     .btn {
       font-size: 1.2rem;
       font-weight: 400; } }
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
     .btn {
       width: 12vh;
       height: 12vh;
@@ -572,11 +572,11 @@ body {
   -webkit-box-direction: normal;
   flex-direction: column;
   overflow: hidden; }
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
     .scores {
       width: 35%;
       height: 100vh; } }
-  @media (max-width: 999px) and (orientation: landscape) {
+  @media (max-width: 1024px) and (orientation: landscape) {
     .scores {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -596,10 +596,10 @@ body {
   justify-content: space-around;
   -webkit-box-align: center;
   align-items: center; }
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
     .team {
       height: 50vh; } }
-  @media (max-width: 999px) and (orientation: landscape) {
+  @media (max-width: 1024px) and (orientation: landscape) {
     .team {
       height: 70vh; } }
 
@@ -618,7 +618,7 @@ body {
   -webkit-box-align: center;
   align-items: center;
   justify-content: space-around; }
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
     .score-box {
       justify-content: space-around; } }
 
@@ -629,21 +629,21 @@ body {
   letter-spacing: 1px;
   word-spacing: .5rem;
   color: #fff; }
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
     .caption {
       font-size: 4vh; } }
-  @media (max-width: 999px) and (orientation: landscape) {
+  @media (max-width: 1024px) and (orientation: landscape) {
     .caption {
       font-size: 4vh; } }
 
 .score-count {
   font-size: 14vh;
   line-height: 1; }
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
     .score-count {
       font-size: 32vh;
       line-height: 1; } }
-  @media (max-width: 999px) and (orientation: landscape) {
+  @media (max-width: 1024px) and (orientation: landscape) {
     .score-count {
       font-size: 32vw; } }
 
@@ -652,7 +652,7 @@ body {
   display: flex;
   -webkit-box-pack: center;
   justify-content: center; }
-  @media (max-width: 999px) and (orientation: landscape) {
+  @media (max-width: 1024px) and (orientation: landscape) {
     .point-box {
       -webkit-box-pack: center;
       justify-content: center; } }
@@ -664,12 +664,12 @@ body {
   border: 3px solid black;
   text-align: center;
   font-size: 6vw; }
-  @media (min-width: 1000px) {
+  @media (min-width: 1025px) {
     .point {
       width: 7vh;
       height: 7vh;
       font-size: 3vh; } }
-  @media (max-width: 999px) and (orientation: landscape) {
+  @media (max-width: 1024px) and (orientation: landscape) {
     .point {
       width: 7vw;
       height: 7vw;
