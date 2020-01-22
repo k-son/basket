@@ -560,11 +560,6 @@ body {
     color: #fff;
     background-color: #006ece;
     text-transform: uppercase; }
-    @media (max-width: 999px) {
-      .btn--startnew {
-        font-size: 1rem;
-        font-weight: 400;
-        padding: 0; } }
   .btn--pause {
     background-color: #ffb700; }
   .btn--play {
@@ -633,7 +628,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
   word-spacing: .5rem;
-  color: white; }
+  color: #fff; }
   @media (min-width: 1000px) {
     .caption {
       font-size: 4vh; } }
