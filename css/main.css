@@ -447,14 +447,13 @@ body {
       flex-direction: row; } }
 
 .time {
+  position: relative;
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 20vh;
-  margin: 0 auto;
   background-color: black;
   overflow: hidden; }
   @media (min-width: 1025px) {
@@ -470,6 +469,8 @@ body {
       height: 25vh; } }
 
 .timer {
+  position: absolute;
+  left: 10px;
   font-size: 18vw;
   height: 20vh;
   padding: 0 1rem;
@@ -486,12 +487,19 @@ body {
       width: 70vw; } }
   @media (min-width: 1025px) {
     .timer {
+      position: static;
+      left: unset;
       font-size: 23vw;
       height: 32vh;
       width: 65vw;
       margin-bottom: calc((100vh - 23vh - 10rem)/3); } }
 
 .timer-buttons {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 10px;
   display: -webkit-box;
   display: flex; }
   @media (max-width: 1024px) and (orientation: landscape) {
@@ -499,6 +507,11 @@ body {
       display: block; } }
   @media (min-width: 1025px) {
     .timer-buttons {
+      position: static;
+      top: unset;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      right: unset;
       display: -webkit-box;
       display: flex; } }
   .timer-buttons--1floor {

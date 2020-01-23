@@ -12,11 +12,11 @@
 }
 
 .time {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 20vh;
-  margin: 0 auto;
   background-color: black;
   overflow: hidden;
 
@@ -35,6 +35,8 @@
 }
 
 .timer {
+  position: absolute;
+  left: 10px;
   font-size: 18vw;
   height: 20vh;
   padding: 0 1rem;
@@ -49,6 +51,8 @@
   }
 
   @media (min-width: 1025px) {
+    position: static;
+    left: unset;
     font-size: 23vw;
     height: 32vh;
     width: 65vw;
@@ -57,6 +61,10 @@
 }
 
 .timer-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
   display: flex;
 
   @media (max-width: 1024px) and (orientation: landscape) {
@@ -64,6 +72,10 @@
    }
 
   @media (min-width: 1025px) {
+    position: static;
+    top: unset;
+    transform: translateY(0);
+    right: unset;
     display: flex;
   }
 
