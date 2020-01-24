@@ -13,6 +13,3 @@ Responsive layouts for mobile, tablet and desktop (can act as a score board) con
 <br />
 
 Stopwatch jQuery plugin by https://github.com/envynoiz/countimer
-
-
-it's a test branch
